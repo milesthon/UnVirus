@@ -1,0 +1,71 @@
+[Version]
+Signature="$Chicago$"
+Provider=UnVirus
+
+[DefaultInstall]
+AddReg=UnhookRegKey
+DelReg=DUnhookRegKey
+
+[UnhookRegKey]
+HKLM, SOFTWARE\CLASSES\batfile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\comfile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\exefile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\piffile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\regfile\shell\open\command,,,"regedit.exe ""%1"""
+HKLM, SOFTWARE\CLASSES\scrfile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\htmlfile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\jpegfile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\pngfile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\pdffile\shell\open\command,,,"""%1"" %*"
+HKLM, SOFTWARE\CLASSES\.txt\shell\open\command,,,"notepad.exe ""%1"""
+HKLM, SOFTWARE\CLASSES\.docx\shell\open\command,,,"winword.exe ""%1"""
+HKLM, SOFTWARE\CLASSES\.xlsx\shell\open\command,,,"excel.exe ""%1"""
+HKLM, SOFTWARE\CLASSES\.pptx\shell\open\command,,,"powerpnt.exe ""%1"""
+HKLM, SOFTWARE\CLASSES\.pdf\shell\open\command,,,"acrord32.exe ""%1"""
+HKLM, SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon,Shell,0x00000020,explorer.exe
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced,HideFileExt,0x00010001,0
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced,IconsOnly,0x00010001,0
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced,Hidden,0x00010001,1
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\Hidden\SHOWALL,CheckedValue,0x00010001,1
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,EnableCursorSuppression,0x00010001,1
+
+[DUnhookRegKey]
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,DisableTaskMgr
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,DisableRegistryTools
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,DisableCMD
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,NoDispCPL
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,legalnoticetext
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoFolderOptions
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoControlPanel
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoDrives
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoViewOnDrive
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,DisallowRun
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,RestrictRun
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoDesktop
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoFind
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoShellSearchButton
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoClose
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoPropertiesMyComputer
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoViewContextMenu
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\RestrictRun
+
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,DisableTaskMgr
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,DisableRegistryTools
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,DisableCMD
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,NoDispCPL
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,legalnoticecaption
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoFolderOptions
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoControlPanel
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoDrives
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoViewOnDrive
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,DisallowRun
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,RestrictRun
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoDesktop
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoFind
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoShellSearchButton
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoClose
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoPropertiesMyComputer
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoViewContextMenu
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun
+HKCU, SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\RestrictRun
