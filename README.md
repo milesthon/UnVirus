@@ -16,8 +16,11 @@
 ***
 
 1. Установить файл .inf
-1. Install .inf file
 2. Запустить батч скрипт
-2. Run the batch script
 3. Скопировать папки на флешку или стевой диск (Опционально)
+
+***
+
+1. Install .inf file
+2. Run the batch script
 3. Copy the folders to a flash drive or a hard drive (Optional)
